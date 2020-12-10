@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPSLSproj
 {
-    class Human
+    class Human : Player
     {
     }
 }

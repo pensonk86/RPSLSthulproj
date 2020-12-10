@@ -8,5 +8,10 @@ namespace RPSLSproj
 {
     class Game
     {
+        string playerOne;
+        string playerTwo;
+
+
+
     }
 }
