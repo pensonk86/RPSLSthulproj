@@ -8,7 +8,9 @@ namespace RPSLSproj
 {
     class Game
     {
-        //Method Variable
+        // Method Variable
+        // Game has to be won based on a minimum of "best of 3" to decide winner
+
         Player player1;
         Player player2;
 

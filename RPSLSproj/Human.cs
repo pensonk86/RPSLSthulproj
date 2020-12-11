@@ -10,18 +10,17 @@ namespace RPSLSproj
     {
         //Method Variable
         public string playerOne;
-
-
-
+       
 
         // Constructor
         public Human()
         {
-            
+
 
 
         }
-
+        
+        
         public override void choosemethod()
         {
             bool goodInput = false;
@@ -50,10 +49,12 @@ namespace RPSLSproj
                 }
             }
 
-            
+        }
 
-            
-
+        public override bool Equals(object obj)
+        {
+            return obj is Human human &&
+                   playerOne == human.playerOne;
         }
 
 

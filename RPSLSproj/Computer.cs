@@ -9,9 +9,9 @@ namespace RPSLSproj
     class Computer : Player
     {
         //Method Variable
+        public string playerTwo;
 
-
-
+       
 
 
         // Constructor
@@ -24,6 +24,12 @@ namespace RPSLSproj
         public override void choosemethod()
         {
             throw new NotImplementedException();
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Computer computer &&
+                   playerTwo == computer.playerTwo;
         }
 
 
