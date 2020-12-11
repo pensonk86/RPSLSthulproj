@@ -8,5 +8,28 @@ namespace RPSLSproj
 {
     class Computer : Player
     {
+        //Method Variable
+
+
+
+
+
+        // Constructor
+
+        public Computer()
+        {
+
+        }
+
+        public override void choosemethod()
+        {
+            throw new NotImplementedException();
+        }
+
+
+        // Member Method
+
+
+
     }
 }

@@ -6,7 +6,25 @@ using System.Threading.Tasks;
 
 namespace RPSLSproj
 {
-    class Player
-    {
+    abstract class Player
+    {  //Method Variable
+
+        public string playerOne;
+        public string playerTwo;
+
+
+
+        // Constructor
+
+        public Player()
+        {
+
+
+
+        }
+
+
+        // Member Method
+        public abstract void choosemethod();
     }
 }

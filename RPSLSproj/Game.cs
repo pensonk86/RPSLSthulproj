@@ -8,8 +8,21 @@ namespace RPSLSproj
 {
     class Game
     {
-        string playerOne;
-        string playerTwo;
+        //Method Variable
+        Player player1;
+        Player player2;
+
+
+
+        // Constructor
+
+        public Game()
+        {
+
+        }
+
+
+        // Member Method
 
 
 
