@@ -20,7 +20,9 @@ namespace RPSLSproj
 
         public Game()
         {
-
+          
+            player1 = new Human();
+            player2 = new Computer();
         }
 
 

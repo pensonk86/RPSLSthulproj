@@ -26,11 +26,7 @@ namespace RPSLSproj
             throw new NotImplementedException();
         }
 
-        public override bool Equals(object obj)
-        {
-            return obj is Computer computer &&
-                   playerTwo == computer.playerTwo;
-        }
+        
 
 
         // Member Method

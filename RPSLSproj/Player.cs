@@ -7,18 +7,12 @@ using System.Threading.Tasks;
 namespace RPSLSproj
 {
     abstract class Player
-    {  //Method Variable
+    {  //Method Variable (Has A)
        // Somehow assign player values
        // assign player a gesture
 
-        public string scissors;
-        public string rock;
-        public string paper;
-        public string lizard;
-        public string spock;
-        public string playerOne;
-        public string playerTwo;
-
+        public List<Gesture> GestureOptions;
+        public Gesture ChosenGesture;
         
 
 
@@ -26,8 +20,19 @@ namespace RPSLSproj
 
         public Player()
         {
-            
-            
+            Gesture Rock = new Gesture("Rock");
+            Gesture Paper = new Gesture("Paper");
+            Gesture Scissors = new Gesture("Scissors");
+            Gesture Lizard = new Gesture("Lizard");
+            Gesture Spock = new Gesture("Spock");
+
+
+            GestureOptions = new List<Gesture>();
+            GestureOptions.Add(Rock);
+            GestureOptions.Add(Paper);
+            GestureOptions.Add(Scissors);
+            GestureOptions.Add(Lizard);
+            GestureOptions.Add(Spock);
 
 
         }

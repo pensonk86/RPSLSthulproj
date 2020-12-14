@@ -15,7 +15,7 @@ namespace RPSLSproj
         // Constructor
         public Human()
         {
-
+            GestureOptions.Add
 
 
         }
@@ -48,20 +48,19 @@ namespace RPSLSproj
                         break;
                 }
             }
+                            // Member Method
 
         }
 
-        public override bool Equals(object obj)
-        {
-            return obj is Human human &&
-                   playerOne == human.playerOne;
-        }
+        
+        
+            
+        
 
 
 
 
 
-        // Member Method
 
 
 

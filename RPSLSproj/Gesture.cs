@@ -6,46 +6,25 @@ using System.Threading.Tasks;
 
 namespace RPSLSproj
 {
-    class Gesture : Player
+    class Gesture
     {
         // Member Variable
+        public string Name;
         // 
-        
-
-        public Gesture(string scissors, string rock, string paper, string lizard, string spock )
+        public Gesture(string gestureName)
         {
-            this.scissors = scissors;
-            this.rock = rock;
-            this.paper = paper;
-            this.lizard = lizard;
-            this.spock = spock;
+            Name = gestureName;
 
         }
-        
 
-        public List<Gesture> gestureList;
+
+
+
+       
 
 
         // Constructor
-        public Gesture()
-        {
-            gestureList = new List<Gesture>();
-
-            Gesture scissors = new Gesture();
-            Gesture rock = new Gesture();
-            Gesture paper = new Gesture();
-            Gesture lizard = new Gesture();
-            Gesture spock = new Gesture();
-
-
-            gestureList.Add(scissors);
-            gestureList.Add(rock);
-            gestureList.Add(paper);
-            gestureList.Add(lizard);
-            gestureList.Add(spock);
-
-        }
-
+       
 
 
 
