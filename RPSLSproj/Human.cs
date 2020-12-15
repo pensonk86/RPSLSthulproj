@@ -15,10 +15,11 @@ namespace RPSLSproj
         // Constructor
         public Human()
         {
-            GestureOptions.Add
+            
 
-
+       
         }
+                
         
         
         public override void choosemethod()

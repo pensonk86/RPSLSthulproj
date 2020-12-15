@@ -15,6 +15,9 @@ namespace RPSLSproj
         public Gesture ChosenGesture;
         
 
+       
+        
+
 
         // Constructor
 

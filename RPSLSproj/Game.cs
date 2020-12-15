@@ -27,6 +27,67 @@ namespace RPSLSproj
 
 
         // Member Method
+        public void RunGame()
+        {
+            for (int i = 0; i < 2; i++)
+            {
+
+            }
+            
+        }
+
+        
+
+
+        public void Welcome()
+        {
+            Console.WriteLine("Welcome to rock, paper, scissors, lizard, spock!");
+            Console.WriteLine("Please select 1 for human or 2 for computer");
+            Console.ReadLine();
+
+
+        }
+
+        public int ChooseHuman()
+        {
+            
+            for (int i = 1; i < 1; i++)
+            {
+                Console.WriteLine("press" + i + " for Human" );
+
+            }
+            string input = Console.ReadLine();
+            return Int32.Parse(input);
+
+
+        }
+
+        public int ChooseComputer()
+        {
+            for (int i = 2; i < 2; i++)
+            {
+                Console.WriteLine("Press" + i + " for Computer");
+            }
+            string input = Console.ReadLine();
+            return Int32.Parse(input);
+
+        }
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

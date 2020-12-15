@@ -11,6 +11,9 @@ namespace RPSLSproj
         // Member Variable
         public string Name;
         // 
+
+        
+
         public Gesture(string gestureName)
         {
             Name = gestureName;
@@ -20,18 +23,21 @@ namespace RPSLSproj
 
 
 
-       
+
 
 
         // Constructor
-       
-
-
-
-        public override void choosemethod()
+        public Gesture()
         {
-            throw new NotImplementedException();
+
+
+
+
         }
+
+
+
+       
 
 
 
