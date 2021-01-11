@@ -9,7 +9,7 @@ namespace RPSLSproj
     class Computer : Player
     {
         //Method Variable
-        public string playerTwo;
+        public string ComputerName;
 
        
 
