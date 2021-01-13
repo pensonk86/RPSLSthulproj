@@ -11,43 +11,57 @@ namespace RPSLSproj
         // Method Variable
         // Game has to be won based on a minimum of "best of 3" to decide winner
 
-        Player playerOneName;
-        Player playerTwoName;
-        Player ComputerName;
-
+        Player playerOne;
+        Player playerTwo;
+        Player computerName;
+        Player playerTotal;
+        //Player ComputerName;
+        //Player playerTotal;
 
 
         // Constructor
-
-        public void GameSetup()
+        public Game()
         {
-            Console.WriteLine("Choose your opponent");
+            playerOne = new Human();
+            playerTwo = new Human();
+            
+        }
 
-            Console.WriteLine("press 1 for computer");
-            Console.WriteLine("press 2 for human.");
+        public string HowManyPlayers()
+        {
+            Console.WriteLine("1 or 2 players?");
+            string playerTotal = Console.ReadLine();
+            
 
-            string input = Console.ReadLine();
-            Console.WriteLine(input);
             //capture user input as a variable to use in next if statement
-
             //if user entered 1
-            
+            if (playerTotal == "1")
+            {
+                //make p2 a computer
+                Console.WriteLine($"{playerTotal}? Single Player Selected");
+                Console.WriteLine("---");
 
-            
-           
+                
+            }
+            else if (playerTotal == "2")
+            {
+                //make computer a human
+                Console.WriteLine($"{playerTotal}? Two Players Selected");
+                Console.WriteLine("---");
 
+                
+            }
+            else
+            {
+                Console.WriteLine("enter 1 or 2");
+                HowManyPlayers();
 
+            }
+                return ("invalid selection");
 
-            playerOneName = new Human();
-
-            playerTwoName = new Human();
-
-            ComputerName = new Computer();
 
 
         }
-
-
         // Member Method
         public void RunGame()
         {
@@ -61,9 +75,6 @@ namespace RPSLSproj
             }
 
         }
-
-
-
 
         public void Welcome()
         {
@@ -105,18 +116,52 @@ namespace RPSLSproj
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
+
+        
+
+       
+        
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+        
+           
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }

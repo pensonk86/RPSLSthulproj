@@ -42,7 +42,7 @@ namespace RPSLSproj
 
         
         // Member Method
-        public abstract void choosemethod();
+        
 
         
 
