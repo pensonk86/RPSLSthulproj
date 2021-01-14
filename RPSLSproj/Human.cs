@@ -11,7 +11,7 @@ namespace RPSLSproj
         //Method Variable
         public string playerOneName;
         public int score;
-        public string chosenGesture;
+         
 
         // Constructor
         public Human()
@@ -24,7 +24,7 @@ namespace RPSLSproj
 
 
 
-        public void choosemethod()
+        public void ChosenGesture() // what would a better name be?
         {
             bool goodInput = false;
             while (!goodInput)
@@ -44,27 +44,27 @@ namespace RPSLSproj
 
                     case "1":
                     case "one":
-                        ChosenGesture = GestureOptions[0]; //rock
+                        base.ChosenGesture = GestureOptions[0]; //rock
                         goodInput = true;
                         break;
                     case "2":
                     case "two":
-                        ChosenGesture = GestureOptions[1]; //paper
+                        base.ChosenGesture = GestureOptions[1]; //paper
                         goodInput = true;
                         break;
                     case "3":
                     case "three":
-                        ChosenGesture = GestureOptions[2]; //Scissors
+                        base.ChosenGesture = GestureOptions[2]; //Scissors
                         goodInput = true;
                         break;
                     case "4":
                     case "four":
-                        ChosenGesture = GestureOptions[3]; //Lizard
+                        base.ChosenGesture = GestureOptions[3]; //Lizard
                         goodInput = true;
                         break;
                     case "5":
                     case "five":
-                        ChosenGesture = GestureOptions[4]; //Spock
+                        base.ChosenGesture = GestureOptions[4]; //Spock
                         goodInput = true;
                         break;
                     default:
@@ -76,9 +76,18 @@ namespace RPSLSproj
                             // Member Method
 
         }
-        public int IncreaseScore(string name)
+       
+        
+            
+            
+
+
+        
+
+        public override int IncreaseScore(string playerOne, string playerTwo, string computerName)
         {
-            score++;
+
+            score++; // where's is my new home?
             if (score >= 2)
             {
                 Console.WriteLine($"{name} wins the game");
@@ -94,24 +103,7 @@ namespace RPSLSproj
             }
 
 
+            throw new NotImplementedException();
         }
-        
-        
-
-
-
-        
-        
-        
-            
-        
-
-
-
-
-
-
-
-
     }
 }

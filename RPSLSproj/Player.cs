@@ -13,6 +13,9 @@ namespace RPSLSproj
 
         public List<Gesture> GestureOptions;
         public Gesture ChosenGesture;
+        public string name;
+        public int score;
+       
         
 
        
@@ -40,9 +43,9 @@ namespace RPSLSproj
 
         }
 
-        
+
         // Member Method
-        
+        public abstract int IncreaseScore(string playerOne, string playerTwo, string computerName);
 
         
 
